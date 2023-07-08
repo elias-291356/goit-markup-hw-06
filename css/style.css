@@ -1342,7 +1342,6 @@
     }
 
     .form-field {
-        /* outline: 1px solid blue; */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -1364,6 +1363,7 @@
 
     .input-form {
 
+        position: relative;
         padding-left: 38px;
         height: 40px;
         margin-bottom: 8px;
@@ -1372,18 +1372,34 @@
 
     }
 
-    .icon-modal-window {
+    /* .icon-modal-window {
         fill: var(--primary-color);
         position: absolute;
         top: 22px;
         left: 16px;
-    }
+    } */
 
     .comment-modal {
+        margin-top: 8px;
         padding: 8px 16px;
     }
 
-    .form-field:hover .icon-modal-window {
-        fill: var(--accent-color);
+
+    .input-form:focus+.icon-modal-window {
+
+        fill: red;
         transition: fill 250ms var(--cubic-bezier);
+    }
+
+    .icon-modal-window {
+        position: absolute;
+
+        top: 43%;
+        left: 16px;
+
+
+    }
+
+    .label-modal {
+        padding-bottom: 8px;
     }
