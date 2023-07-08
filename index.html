@@ -423,29 +423,71 @@
   <div class="backdrop is-hidden" data-modal>
 
     <div class="modal-window">
-      <div role="group" class="modal-form">
-        <p>Leave your contacts and we will call you back</p>
-        <input type="text" id="name" name="name">
-        <label for="name">name</label>
-        <input type="tel" id="tel" name="tel">
-        <label for="tel">Phone</label>
-        <input type="email" id="email" name="email">
-        <label for="email">E-mail</label>
-        <textarea name="comment" id="comment" class="comment-modal" placeholder="Text input">Comment</textarea>
+
+
+      <form class="form">
+        <p class="modal-window-text">Leave your contacts and we will call you back</p>
+        <div class="form-field">
+          <label class="labe-modal" for="name">name
+
+          </label>
+          <svg class="icon-modal-window">
+            <use href="./images/sprite-modal-window.svg#icon-person-black"> </use>
+          </svg>
+          <input type="text" id="name" name="name" class="input-form">
+        </div>
+        <div class="form-field">
+          <label class="labe-modal" for="tel">Phone
+          </label>
+          <svg class="icon-modal-window">
+            <use href="./images/sprite-modal-window.svg#icon-phone-black"> </use>
+          </svg>
+          <input type="tel" id="tel" name="tel" class="input-form">
+        </div>
+
+        <div class="form-field">
+          <label class="labe-modal" for="email">E-mail
+
+
+          </label>
+          <input type="email" id="email" name="email" class="input-form">
+          <svg class="icon-modal-window">
+            <use href="./images/sprite-modal-window.svg#icon-email-black"> </use>
+          </svg>
+        </div>
+
+
+
+
+
+
+        <label for="comment" class="comment-text">Comment</label>
+        <textarea name="comment" id="comment" class="comment-modal" placeholder="Text input"></textarea>
+
+      </form>
+
+
+      <div class="submit-terms">
         <input type="checkbox" id="terms" name="terms">
         <label for="terms">I accept the terms and conditions of the <span><a href="">Privacy Policy</a></span> </label>
       </div>
+      <!-- <div class="send-form"> -->
 
-      <label for="email">email</label>
-      <button type="submit">Send</button>
+
+
+      <div class="wrap-btn-modal">
+        <button type="submit" class="modal-btn-send">Send</button>
+      </div>
+
       <button type="button" class="modal-btn" data-modal-close>
         <svg class="svg-close-btn" width="8" height="8">
           <use href="./images/close-btn.svg#icon-close-black"></use>
         </svg>
 
       </button>
-
     </div>
+
+    <!-- </div> -->
   </div>
 
   <script src="./js/modal.js"></script>
