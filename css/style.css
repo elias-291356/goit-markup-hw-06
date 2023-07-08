@@ -1257,7 +1257,7 @@
     .modal-window-text {
         color: var(--primary-color);
         text-align: center;
-
+        margin-bottom: 16px;
         font-size: 16px;
         font-family: Roboto;
         font-weight: 500;
@@ -1363,6 +1363,8 @@
     }
 
     .input-form {
+
+        padding-left: 38px;
         height: 40px;
         margin-bottom: 8px;
         border-radius: 4px;
@@ -1373,10 +1375,15 @@
     .icon-modal-window {
         fill: var(--primary-color);
         position: absolute;
-        top: 24px;
-        left: 12px;
+        top: 22px;
+        left: 16px;
     }
 
     .comment-modal {
         padding: 8px 16px;
+    }
+
+    .form-field:hover .icon-modal-window {
+        fill: var(--accent-color);
+        transition: fill 250ms var(--cubic-bezier);
     }
