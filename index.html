@@ -421,7 +421,23 @@
       </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
+
     <div class="modal-window">
+      <div role="group" class="modal-form">
+        <p>Leave your contacts and we will call you back</p>
+        <input type="text" id="name" name="name">
+        <label for="name">name</label>
+        <input type="tel" id="tel" name="tel">
+        <label for="tel">Phone</label>
+        <input type="email" id="email" name="email">
+        <label for="email">E-mail</label>
+        <textarea name="comment" id="comment" class="comment-modal" placeholder="Text input">Comment</textarea>
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I accept the terms and conditions of the <span><a href="">Privacy Policy</a></span> </label>
+      </div>
+
+      <label for="email">email</label>
+      <button type="submit">Send</button>
       <button type="button" class="modal-btn" data-modal-close>
         <svg class="svg-close-btn" width="8" height="8">
           <use href="./images/close-btn.svg#icon-close-black"></use>
