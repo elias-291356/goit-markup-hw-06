@@ -1264,7 +1264,7 @@
     }
 
     .form-field:nth-child(3) {
-        margin-bottom: 0px;
+        margin-bottom: 8px;
     }
 
     .form-field:nth-child(4) {
@@ -1292,7 +1292,7 @@
 
 
     .icon-modal {
-
+        fill: var(--primary-color);
         width: 18px;
         height: 24px;
 
@@ -1321,7 +1321,7 @@
 
     .form-field:focus-within>.label-form {
         transform: translate(-40px, -40px);
-        transition: transform 2500ms;
+        transition: transform 250ms;
 
     }
 
@@ -1332,7 +1332,7 @@
 
     .label-form,
     .comment-form {
-        margin-top: 8px;
+
 
         color: #8E8F99;
 
@@ -1345,6 +1345,7 @@
 
 
     .textarea-form {
+        margin-top: 4px;
         padding: 16px 18px;
         width: 100%;
         min-height: 120px;
@@ -1356,5 +1357,73 @@
         font-family: Roboto;
         line-height: 1.16;
         letter-spacing: 0.48px;
+
+    }
+
+    /* .textarea-form textarea::placeholder {
+        color: rgba(46, 47, 66, 0.40);
+
+        font-size: 12px;
+        font-family: Roboto;
+        line-height: 1.16;
+        letter-spacing: 0.48px;
+    } */
+
+    /* оформление чекбокс и кнопки  */
+
+    .checkbox {
+
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+
+    .label-checkbox {
+        font-size: 12px;
+        font-family: Roboto;
+        line-height: 1.16;
+        letter-spacing: 0.48px;
+
+    }
+
+    .label-checkbox {
+
+        height: 15px;
+        width: 350px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+
+    }
+
+    .icon-checkbox {
+        /* margin-right: 4px; */
+
+        display: inline-block;
+        transition: background-color 250ms var(--cubic-bezier);
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        border: 1px solid rgba(46, 47, 66, 0.40);
+    }
+
+    .checkbox:checked+.icon-checkbox {
+        background-color: #4D5AE5;
+        background-image: url(../images/main-page/Checkbox.svg);
+        background-size: contain;
+        background-origin: border-box;
 
     }
