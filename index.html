@@ -424,56 +424,50 @@
 
     <div class="modal-window">
 
+      <form class="form" autocomplete="off">
 
-      <form class="form">
-        <!-- <p class="modal-window-text">Leave your contacts and we will call you back</p> -->
-        <div class="form-field">
-          <label class="label-modal" for="name">Name</label>
-          <input type="text" id="name" name="name" class="input-form">
-          <svg class="icon-modal-window">
+
+        <label class="form-field">
+          <input type="text" name="name" class="input-form" placeholder=" ">
+          <span class="label-form">Name</span>
+          <svg class="icon-modal">
             <use href="./images/sprite-modal-window.svg#icon-person-black"> </use>
           </svg>
+        </label>
 
-        </div>
-        <div class="form-field">
-          <label class="label-modal" for="tel">Phone</label>
-          <input type="tel" id="tel" name="tel" class="input-form">
-          <svg class="icon-modal-window">
+
+
+        <label class="form-field">
+          <input type="tel" name="tel" class="input-form" placeholder=" ">
+          <span class="label-form">Phone</span>
+          <svg class="icon-modal">
             <use href="./images/sprite-modal-window.svg#icon-phone-black"> </use>
           </svg>
+        </label>
 
-        </div>
-        <div class="form-field">
-          <label class="label-modal" for="email">E-mail</label>
-          <input type="email" id="email" name="email" class="input-form">
-          <svg class="icon-modal-window">
+
+
+
+        <label class="form-field">
+          <input type="email" name="email" class="input-form" placeholder=" ">
+          <span class="label-form">E-mail</span>
+          <svg class="icon-modal">
             <use href="./images/sprite-modal-window.svg#icon-email-black"> </use>
           </svg>
-
-        </div>
-
-
-
-
-
-
-        <label for="comment" class="comment-text">Comment</label>
-        <textarea name="comment" id="comment" class="comment-modal" placeholder="Text input"></textarea>
-
+        </label>
       </form>
 
 
-      <div class="submit-terms">
-        <input type="checkbox" id="terms" name="terms">
-        <label for="terms">I accept the terms and conditions of the <span><a href="">Privacy Policy</a></span> </label>
-      </div>
-      <!-- <div class="send-form"> -->
 
 
 
-      <div class="wrap-btn-modal">
-        <button type="submit" class="modal-btn-send">Send</button>
-      </div>
+
+
+
+
+
+
+
 
       <button type="button" class="modal-btn" data-modal-close>
         <svg class="svg-close-btn" width="8" height="8">
@@ -483,7 +477,7 @@
       </button>
     </div>
 
-    <!-- </div> -->
+
   </div>
 
   <script src="./js/modal.js"></script>
