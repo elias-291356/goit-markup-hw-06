@@ -1181,6 +1181,8 @@
 
     /* модальное окно банер  */
 
+
+
     .backdrop {
         position: fixed;
 
@@ -1296,14 +1298,14 @@
 
         margin-bottom: 4px;
         font-size: 12px;
-        width: 360px;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--modal-color);
 
 
     }
 
-    .wrap-user-name {
+    .wrap-user {
         position: relative;
     }
 
@@ -1362,6 +1364,14 @@
         top: 50%;
         left: 40px;
         transform: translateY(-50%);
+
+    }
+
+    .input-form:focus {
+        border-color: var(--accent-color);
+
+
+
 
     }
 
