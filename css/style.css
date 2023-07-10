@@ -1105,38 +1105,45 @@
     .form-footer {
 
         display: flex;
-        justify-content: space-between;
+
         gap: 24px;
     }
+
+
 
     .form-email {
         width: 264px;
         height: 40px;
-        background-color: var(--primary-color);
+        background-color: transparent;
         border-radius: 4px;
-        border: 1px solid var(--white, #FFF);
+        border: 1px solid #ffffff;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         color: var(--white-color);
         font-size: 12px;
-        font-family: Roboto;
-        line-height: 24px;
-        letter-spacing: 0.48px;
+
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        padding-left: 16px
     }
+
 
 
 
     .form-footer input::placeholder {
         font-size: 12px;
-        font-family: Roboto;
+        font-family: 'Roboto', sans-serif;
         line-height: 24px;
         letter-spacing: 0.48px;
         color: var(--white-color);
+
     }
 
 
 
     .btn-footer {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: var(--accent-color);
 
         font-family: "Roboto", sans-serif;
@@ -1146,16 +1153,24 @@
         letter-spacing: 0.04em;
         color: var(--white-color);
         cursor: pointer;
+        border: none;
         border-radius: 4px;
         min-width: 165px;
+        height: 40px;
         padding: 8px 24px;
         border: transparent;
         margin-top: 48px;
-        height: 40px;
         margin: 0 auto;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    .icon-send {
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+        fill: #ffffff;
+
+    }
 
 
 
@@ -1258,9 +1273,7 @@
 
     .form {
 
-        padding-top: 72px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 72px 24px 24px 24px;
         display: flex;
         flex-direction: column;
 
@@ -1343,6 +1356,7 @@
         transform: translate(-40px, -40px);
 
     }
+
 
     .label-form,
     .comment-form {
@@ -1440,7 +1454,7 @@
 
     .checkbox:checked+.icon-checkbox {
         background-color: #4D5AE5;
-        background-image: url(../images/main-page/Checkbox.svg);
+        background-image: url(../images/Checkbox.svg);
         background-size: contain;
         background-origin: border-box;
 

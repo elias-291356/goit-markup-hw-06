@@ -411,20 +411,28 @@
       </div>
       <div class="footer-form">
         <p class="subscribe-title-form">Subscribe</p>
-        <div class="form-footer">
-          <form action="">
-            <input type="email" name="email" id="mail" class="form-email " placeholder="E-mail">
 
-          </form>
-          <button type="submit" class="btn-footer">Subscribe</button>
-        </div>
+        <form action="" class="form-footer">
+          <label class="footer-label">
+            <input type="email" name="email" class="form-email " placeholder="E-mail">
+
+          </label>
+
+          <button type="submit" class="btn-footer">
+            <span>Subscribe</span>
+            <svg class="icon-send">
+              <use href="./images/icon-send.svg#icon-icon-send-1"> </use>
+            </svg>
+          </button>
+        </form>
+
       </div>
   </footer>
   <div class="backdrop is-hidden" data-modal>
 
     <div class="modal-window">
-      <!-- <p class="contact-form">Leave your contacts and we will call you back</p> -->
 
+      <p class="contact-form">Leave your contacts and we will call you back</p>
       <form class="form" autocomplete="off">
         <label class="form-field">
           <input type="text" name="name" class="input-form" placeholder=" ">
