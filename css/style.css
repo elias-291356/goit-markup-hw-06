@@ -7,6 +7,7 @@
     --secondary-color: #F4F4FD;
     --hover-color: #404bbf;
     --white-color:#ffffff;
+
     */
 
 
@@ -19,6 +20,7 @@
         --white-color: #ffffff;
         --costumers-color: #8E8F99;
         --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+        --modal-color: #8e8f99;
     }
 
     html {
@@ -1200,6 +1202,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
+        padding: 72px 24px 24px 24px;
         width: 408px;
         min-height: 584px;
         background: #fcfcfc;
@@ -1258,7 +1261,7 @@
 
 
     /* форма в модальном окне  */
-    /* .contact-form {
+    .contact-form {
         width: 360px;
         color: var(--primary-color);
         text-align: center;
@@ -1266,28 +1269,38 @@
         font-family: Roboto;
         font-weight: 500;
         line-height: 1.5;
-        letter-spacing: 0.32px;
-        padding-bottom: 20px;
+        letter-spacing: 0.02em;
+        padding-bottom: 16px;
 
-    } */
+    }
 
     .form {
 
-        padding: 72px 24px 24px 24px;
         display: flex;
         flex-direction: column;
 
 
     }
 
+    .form-wrap {
+        margin-bottom: 8px;
+
+    }
+
     .form-field {
         display: block;
-        position: relative;
-        margin-bottom: 26px;
 
+        margin-bottom: 4px;
+        font-size: 12px;
         width: 360px;
+        letter-spacing: 0.04em;
+        color: var(--modal-color);
 
 
+    }
+
+    .wrap-user-name {
+        position: relative;
     }
 
     .form-field:nth-child(3) {
@@ -1301,27 +1314,39 @@
 
     .input-form {
         width: 100%;
-        padding-left: 40px;
+        height: 40px;
+        padding-left: 38px;
         color: #8E8F99;
         font-size: 12px;
         font-family: Roboto;
         line-height: 1.16;
         letter-spacing: 0.48px;
-        height: 40px;
         margin: 0;
+        outline: transparent;
+        transition: border-color 250ms var(--cubic-bezier);
 
 
 
         border-radius: 4px;
-        border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+        border: 1px solid rgba(46, 47, 66, 0.40);
 
+    }
+
+    .input-form:focus {
+        border-color: #4D5AE5;
     }
 
 
     .icon-modal {
+        position: absolute;
         fill: var(--primary-color);
         width: 18px;
         height: 24px;
+
+        top: 50%;
+        left: 16px;
+        transform: translateY(-50%);
+        transition: fill 250ms var(--cubic-bezier);
 
     }
 
@@ -1334,17 +1359,14 @@
 
     }
 
-    .icon-modal {
-
-        position: absolute;
-        top: 50%;
-        left: 16px;
-        transform: translateY(-50%);
+    .icon-modal:focus {
+        fill: #4D5AE5;
     }
 
-    .form-field:focus-within>.icon-modal {
+
+    /* .form-field:focus-within>.icon-modal {
         fill: var(--accent-color);
-    }
+    } */
 
     .form-field:focus-within>.label-form {
         transform: translate(-40px, -40px);
