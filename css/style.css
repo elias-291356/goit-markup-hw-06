@@ -1332,9 +1332,11 @@
 
     }
 
+    /* 
     .input-form:focus {
         border-color: #4D5AE5;
-    }
+
+    } */
 
 
     .icon-modal {
@@ -1364,9 +1366,9 @@
     }
 
 
-    /* .form-field:focus-within>.icon-modal {
+    .form-field:focus-within>.icon-modal {
         fill: var(--accent-color);
-    } */
+    }
 
     .form-field:focus-within>.label-form {
         transform: translate(-40px, -40px);
