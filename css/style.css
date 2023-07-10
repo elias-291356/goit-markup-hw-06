@@ -349,9 +349,6 @@
        
     } */
 
-    .backdrop {
-        padding: 72px 24px 24px 24px;
-    }
 
     /*
     .backdrop.is-hidden {
@@ -1207,7 +1204,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(1);
-        /* padding: 72px 24px 24px 24px; */
+        padding: 72px 24px 24px 24px;
         width: 408px;
         min-height: 584px;
         background: #fcfcfc;
@@ -1367,7 +1364,7 @@
     }
 
     .input-form:focus~.icon-modal {
-        fill: #d83c0c;
+        fill: var(--accent-color);
     }
 
 
