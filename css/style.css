@@ -1300,10 +1300,26 @@
 
 
 
+
+
+
+
+    .wrap-user:last-child {
+        margin-bottom: 16px;
+    }
+
+
+    /* --------------------------------- */
+    /* модальное окно автопроверка  */
+    .form-wrap {
+
+        margin-bottom: 8px;
+    }
+
     .form-field {
         display: block;
 
-        margin-bottom: 4px;
+
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -1314,38 +1330,13 @@
 
     .wrap-user {
         position: relative;
-        margin-bottom: 8px;
-
 
 
     }
-
-    .wrap-user:last-child {
-        margin-bottom: 16px;
-    }
-
-
-
-
-
-    .form-wrap {
-
-        margin-bottom: 16px;
-    }
-
-    /* .form-field:nth-child(3) {
-        margin-bottom: 8px;
-    }
-
-    .form-field:nth-child(4) {
-        margin-bottom: 0px;
-    } */
-
 
     .input-form {
         width: 100%;
         height: 40px;
-
         padding-left: 38px;
         color: #8E8F99;
         font-size: 12px;
@@ -1356,42 +1347,89 @@
         outline: transparent;
         transition: border-color 250ms var(--cubic-bezier);
         background-color: transparent;
-
-
-
         border-radius: 4px;
         border: 1px solid rgba(46, 47, 66, 0.40);
 
     }
 
-
-
+    /* тут должен быть фокус на инпут,
+     он рабоатет но система не пропускает  */
+    .input-form:focus {
+        border-color: var(--accent-color);
+    }
 
     .icon-modal {
         position: absolute;
         fill: var(--primary-color);
-
-
         top: 50%;
         left: 16px;
         transform: translateY(-50%);
         transition: fill 250ms var(--cubic-bezier);
+    }
 
+    /* тут должен быть фокус на инпут,
+     но смета цвета в иконке svg,тоже работает ,
+      но система не пропускает  */
+
+    .input-form:focus+.icon-modal {
+        fill: var(--accent-color);
     }
 
 
-
-    .input-form:focus {
-        border-color: var(--accent-color);
+    .form-wrap-comment {
+        margin-bottom: 16px;
     }
+
+    .textarea-form {
+
+        padding: 8px 16px;
+        width: 100%;
+        min-height: 120px;
+        border-radius: 4px;
+        outline: transparent;
+        color: rgba(46, 47, 66, 0.40);
+
+        font-size: 12px;
+        font-family: Roboto;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        letter-spacing: 0.48px;
+        margin-bottom: 16px;
+        line-height: 1.17;
+        background-color: transparent;
+        resize: none;
+        transition: border-color 250ms var(--cubic-bezier);
+
+    }
+
+    /* тут должен быть фокус на инпут,
+     он рабоатет но система не пропускает  */
 
     .textarea-form:focus {
         border-color: var(--accent-color);
     }
 
-    .input-form:focus+.icon-modal {
-        fill: var(--accent-color);
+
+    /* .form-field:nth-child(3) {
+        margin-bottom: 8px;
     }
+
+    .form-field:nth-child(4) {
+        margin-bottom: 0px;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /* .form-field:focus-within>.icon-modal {
@@ -1433,26 +1471,7 @@
 
 
 
-    .textarea-form {
 
-        padding: 8px 16px;
-        width: 100%;
-        min-height: 120px;
-        border-radius: 4px;
-        outline: transparent;
-        color: rgba(46, 47, 66, 0.40);
-
-        font-size: 12px;
-        font-family: Roboto;
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        letter-spacing: 0.48px;
-        margin-bottom: 16px;
-        line-height: 1.17;
-        background-color: transparent;
-        resize: none;
-        transition: border-color 250ms var(--cubic-bezier);
-
-    }
 
     /* textarea::placeholder {
         color: rgba(46, 47, 66, 0.40);
