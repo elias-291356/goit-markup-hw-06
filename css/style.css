@@ -1114,6 +1114,7 @@
     }
 
     .label-checkbox {
+        outline: 1px solid blue;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -1121,6 +1122,7 @@
     }
 
     .checkbox-span {
+
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -1133,10 +1135,14 @@
 
     }
 
+
+
+
     .checkbox:checked+.checkbox-span {
         background-color: var(--hover-color);
         border: none;
         fill: var(--secondary-color);
+
 
     }
 
