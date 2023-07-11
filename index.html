@@ -391,20 +391,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="backdrop is-hidden " data-modal>
 
     <div class="modal-window">
@@ -420,7 +406,7 @@
 
 
           <div class="wrap-user">
-            <input type="text" name="user-name" class="input-form" placeholder=" " id="user-name">
+            <input name="user-name" class="input-form" placeholder=" " id="user-name">
             <svg class="icon-modal" width="18" height="24">
               <use href="./images/sprite-modal-window.svg#icon-person-black"> </use>
             </svg>
@@ -441,7 +427,7 @@
           </div>
         </div>
 
-        <div class="form-wrap-email">
+        <div class="form-wrap">
           <label class="form-field" for="email">Email</label>
 
 
@@ -457,7 +443,7 @@
 
 
 
-        <div class="wrap-comment">
+        <div class="wrap-user">
           <label class="form-field" for="user-comment">Comment</label>
           <textarea class="textarea-form" name="user-comment" placeholder="Text input" id="user-comment">  </textarea>
         </div>
@@ -471,13 +457,12 @@
 
         <div class="checkbox-container">
           <input type="checkbox" class="checkbox visually-hidden " name="user-privacy" id="user-privacy" value="true">
-          <label class="label-checkbox " for="user-privacy">
-            I accept the terms and conditions of the <a href="" class="link link-privacy">Privacy Policy</a>
+          <label class="label-checkbox " for="user-privacy"> I accept the terms and conditions of the
             <span class="checkbox-label">
-
               <svg width="10" height="8">
                 <use href="./images/vector.svg#icon-vector1"> </use>
               </svg>
+              <a href="" class="link link-privacy">Privacy Policy</a>
             </span>
 
           </label>
