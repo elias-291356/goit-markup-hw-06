@@ -1339,6 +1339,7 @@
         margin: 0;
         outline: transparent;
         transition: border-color 250ms var(--cubic-bezier);
+        background-color: transparent;
 
 
 
@@ -1353,8 +1354,7 @@
     .icon-modal {
         position: absolute;
         fill: var(--primary-color);
-        width: 18px;
-        height: 24px;
+
 
         top: 50%;
         left: 16px;
@@ -1374,7 +1374,7 @@
     }
 
     .input-form:focus {
-        border-color: var(--accent-color);
+        border-color: #4D5AE5;
     }
 
     .textarea-form:focus {
@@ -1393,7 +1393,7 @@
 
 
     .input-form:focus~.icon-modal {
-        fill: var(--accent-color);
+        fill: #4D5AE5;
     }
 
 
