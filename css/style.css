@@ -1314,10 +1314,20 @@
 
     .wrap-user {
         position: relative;
+        margin-bottom: 8px;
 
 
 
     }
+
+    .wrap-user:last-child {
+        margin-bottom: 16px;
+    }
+
+
+
+
+
 
 
 
@@ -1375,15 +1385,15 @@
 
 
     .input-form:focus {
-        border-color: #4D5AE5;
+        border-color: var(--accent-color);
     }
 
     .textarea-form:focus {
-        border-color: #4D5AE5;
+        border-color: var(--accent-color);
     }
 
-    . .input-form:focus~.icon-modal {
-        fill: #4D5AE5;
+    .input-form:focus+.icon-modal {
+        fill: var(--accent-color);
     }
 
 
@@ -1501,6 +1511,19 @@
         overflow: hidden;
     } */
 
+
+
+
+
+
+
+
+    .checkbox:checked~.checkbox-label {
+        background-color: var(--hover-color);
+        border: none;
+        fill: var(--secondary-color);
+    }
+
     .checkbox-container {
         margin-bottom: 24px;
     }
@@ -1508,7 +1531,7 @@
 
 
     .label-checkbox {
-
+        display: inline-flex;
         height: 15px;
         width: 350px;
         color: var(--modal-color);
