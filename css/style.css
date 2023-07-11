@@ -1332,7 +1332,7 @@
 
 
     .form-wrap {
-        height: 0px;
+
         margin-bottom: 16px;
     }
 
@@ -1593,6 +1593,7 @@
     /* кнопка отправить в форме  */
 
     .btn-form {
+        display: block;
         min-width: 169px;
         min-height: 56px;
         padding: 16px 32px;
