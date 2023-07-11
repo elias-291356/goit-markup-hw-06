@@ -1308,13 +1308,15 @@
     .wrap-user {
         position: relative;
 
+
+
     }
 
 
 
     .form-wrap {
         height: 0px;
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
 
     .form-field:nth-child(3) {
@@ -1438,7 +1440,7 @@
 
     .textarea-form {
         margin-top: 4px;
-        padding: 16px 18px;
+        padding: 8px 16px;
         width: 100%;
         min-height: 120px;
         border-radius: 4px;
@@ -1447,9 +1449,13 @@
         width: 360px;
         font-size: 12px;
         font-family: Roboto;
-        line-height: 1.16;
+        border: 1px solid rgba(46, 47, 66, 0.4);
         letter-spacing: 0.48px;
         margin-bottom: 16px;
+        line-height: 1.17;
+        background-color: transparent;
+        resize: none;
+        transition: border-color 250ms var(--cubic-bezier);
 
     }
 
