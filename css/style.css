@@ -1536,7 +1536,7 @@
 
     .checkbox:checked+.icon-checkbox {
         background-color: #4D5AE5;
-        /* background-image: url(../images/Checkbox.svg); */
+        background-image: url(../images/vector.svg);
         background-size: contain;
         background-origin: border-box;
         border: none;
