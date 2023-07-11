@@ -1476,7 +1476,11 @@
 
     }
 
-    /* .label-checkbox:checked .checkbox-label {
+    .link-privacy {
+        color: var(--accent-color);
+    }
+
+    /* .checkbox:checked+.checkbox-label {
         background-color: var(--hover-color);
         border: none;
         fill: var(--secondary-color);
@@ -1566,7 +1570,7 @@
     /* кнопка отправить в форме  */
 
     .btn-form {
-        width: 169px;
+        min-width: 169px;
         min-height: 56px;
         padding: 16px 32px;
         margin-top: 24px;
@@ -1577,7 +1581,7 @@
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         color: var(--white-color);
         text-align: center;
-
+        cursor: pointer;
         font-size: 16px;
         border: transparent;
         font-weight: 500;
