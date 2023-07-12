@@ -254,7 +254,7 @@
     .caption {
         max-width: 496px;
         padding-bottom: 48px;
-        margin: 0 auto;
+
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
@@ -1143,12 +1143,14 @@
 
 
 
-    .checkbox:checked+.label-checkbox .checkbox-span {
+    .checkbox:checked + .label-checkbox .checkbox-span {
         background-color: var(--hover-color);
         border: none;
         fill: var(--secondary-color);
 
     }
+
+
 
     .link-privacy {
         color: var(--accent-color);
