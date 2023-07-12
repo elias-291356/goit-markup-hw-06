@@ -1118,7 +1118,7 @@
     }
 
     .label-checkbox {
-        outline: 1px solid red;
+
 
         font-size: 12px;
         line-height: 1.17;
@@ -1143,7 +1143,7 @@
 
 
 
-    .checkbox:checked+.checkbox-span {
+    .checkbox:checked+.label-checkbox .checkbox-span {
         background-color: var(--hover-color);
         border: none;
         fill: var(--secondary-color);
