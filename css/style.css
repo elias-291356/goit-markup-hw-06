@@ -1118,8 +1118,8 @@
     }
 
     .label-checkbox {
+        outline: 1px solid red;
 
-        outline: 1px solid blue;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -1147,7 +1147,6 @@
         background-color: var(--hover-color);
         border: none;
         fill: var(--secondary-color);
-
 
     }
 
